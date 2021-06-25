@@ -1,0 +1,3 @@
+class Area():
+    id = ""
+    areaName = ""
