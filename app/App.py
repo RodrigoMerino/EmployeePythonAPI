@@ -37,8 +37,8 @@ class App:
         
     @app.route('/delete/<int:id>',methods=['DELETE'])
     def deleteEmployee(id):
-        EmployeeService().deleteEmployee(id)
-        return jsonify({"status":200})
+        data =EmployeeService().deleteEmployee(id)
+        return (data)
 
 
     @app.route('/update/<int:id>',methods=['POST'])
